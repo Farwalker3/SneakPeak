@@ -1,16 +1,131 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>SneakPeak</title>
-	</head>
-	<body>
-		<h1>Welcome to SneakPeak</h1>
-		<p>This website will be updated with behind the scenes content of projects I'm working on...</p>
-		<br><br>
-		<b>The following is AI generated and for internal-use only. Do not distribute or promote this content.</b>
-		<p>This is a DEMO for a song called Wonderpaw, enjoy!</p>
-		<img src="Wonderpaw.jpeg" alt="Wonderpaw">
-		<audio src="Wonderpaw.mp3"></audio>
-	</body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SneakPeak - Internal Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Roboto', sans-serif; }
+    body { background: #111; color: #f0f0f0; line-height: 1.6; padding-top: 120px; }
+
+    /* CROCKED warning banner */
+    #warning-banner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: red;
+      color: white;
+      font-weight: bold;
+      padding: 0.5rem 0;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: rotate(-2deg);
+      z-index: 1000;
+      border-bottom: 4px solid yellow;
+    }
+    #warning-banner span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: crockedScroll 20s linear infinite;
+      transform: rotate(1deg);
+    }
+    @keyframes crockedScroll {
+      0% { transform: translateX(0) rotate(1deg); }
+      25% { transform: translateX(-25%) rotate(-1deg); }
+      50% { transform: translateX(-50%) rotate(2deg); }
+      75% { transform: translateX(-75%) rotate(-2deg); }
+      100% { transform: translateX(-100%) rotate(1deg); }
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 { font-size: 2.2rem; text-align: center; margin-bottom: 1rem; color: #1abc9c; }
+    p { margin-bottom: 1rem; font-size: 1.1rem; }
+
+    /* Disclaimer styling */
+    .disclaimer {
+      background: #ff4444;
+      color: white;
+      font-weight: bold;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+      line-height: 1.4;
+      border: 3px dashed yellow;
+    }
+
+    /* Media content styling */
+    img, audio {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+    }
+
+    audio {
+      width: 100%;
+      outline: none;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin: 4rem 0 2rem;
+      font-size: 0.8rem;
+      color: #888;
+    }
+
+    /* Optional: add a subtle animated background for fun */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: repeating-linear-gradient(45deg, rgba(255,255,255,0.02), rgba(255,255,255,0.02) 1px, transparent 1px, transparent 10px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- CROCKED Warning Banner -->
+  <div id="warning-banner">
+    <span>⚠ WARNING: INTERNAL USE ONLY ⚠ DO NOT DISTRIBUTE ⚠ COPYRIGHTED OR AI-GENERATED CONTENT ⚠</span>
+  </div>
+
+  <div class="container">
+    <h1>Welcome to SneakPeak</h1>
+
+    <div class="disclaimer">
+      The following content is AI-generated and strictly <strong>for internal use only</strong>.  
+      Do not distribute, share, or promote this content in any way.
+    </div>
+
+    <p>This website will be updated with behind-the-scenes content of projects I'm working on.</p>
+
+    <p>This is a <strong>DEMO</strong> for a song called <em>Wonderpaw</em>, enjoy!</p>
+
+    <img src="Wonderpaw.jpeg" alt="Wonderpaw">
+    <audio controls src="Wonderpaw.mp3"></audio>
+
+  </div>
+
+  <footer>
+    SneakPeak Internal Demo | Do not distribute | © 2025
+  </footer>
+
+</body>
 </html>
